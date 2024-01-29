@@ -268,3 +268,4 @@ C:\Users\dasak\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\net8.0\refin
 C:\Users\dasak\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\net8.0\MovieReviewApp.pdb
 C:\Users\dasak\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\net8.0\MovieReviewApp.genruntimeconfig.cache
 C:\Users\dasak\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\net8.0\ref\MovieReviewApp.dll
+C:\Users\dasak\source\repos\MovieReviewApp\MovieReviewApp\obj\Debug\net8.0\MovieReviewApp.sourcelink.json

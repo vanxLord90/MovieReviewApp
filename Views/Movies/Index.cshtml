@@ -52,16 +52,11 @@
             </td>
                 <td>
                     <!-- Link to the Reviews page -->
-                    @if (item.HasReviews)
-                    {
+                    
                         <!-- Display the "Reviews" link only when reviews exist -->
                         <a href="@Url.Action("Index", "Reviews", new { movieTitle = item.Title })">Reviews</a>
-                    }
-                    else
-                    {
-                        <!-- Display alternative content or an empty cell -->
-                        No Reviews
-                    }
+                   
+             
                 </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

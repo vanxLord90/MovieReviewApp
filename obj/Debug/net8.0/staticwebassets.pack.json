@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Users\\dasak\\source\\repos\\MovieReviewApp\\MovieReviewApp\\wwwroot\\lib\\Pokiri_movie_poster.jpg",
+      "PackagePath": "staticwebassets\\lib\\Pokiri_movie_poster.jpg"
+    },
+    {
       "Id": "C:\\Users\\dasak\\source\\repos\\MovieReviewApp\\MovieReviewApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
@@ -243,6 +247,22 @@
     {
       "Id": "C:\\Users\\dasak\\source\\repos\\MovieReviewApp\\MovieReviewApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\dasak\\source\\repos\\MovieReviewApp\\MovieReviewApp\\wwwroot\\lib\\oppenheimer.jpg",
+      "PackagePath": "staticwebassets\\lib\\oppenheimer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dasak\\source\\repos\\MovieReviewApp\\MovieReviewApp\\wwwroot\\lib\\sorcerer'sstone.jpg",
+      "PackagePath": "staticwebassets\\lib\\sorcerer'sstone.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dasak\\source\\repos\\MovieReviewApp\\MovieReviewApp\\wwwroot\\lib\\sorcerer'sstone.webp",
+      "PackagePath": "staticwebassets\\lib\\sorcerer'sstone.webp"
+    },
+    {
+      "Id": "C:\\Users\\dasak\\source\\repos\\MovieReviewApp\\MovieReviewApp\\wwwroot\\lib\\superbad.jpg",
+      "PackagePath": "staticwebassets\\lib\\superbad.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MovieReviewApp.Microsoft.AspNetCore.StaticWebAssets.props",

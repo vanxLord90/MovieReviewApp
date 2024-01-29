@@ -1,8 +1,59 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var movies = ViewData["Movies"] as List<Movie>;
+    var reviews = ViewData["Reviews"] as List<Review>;
+    var imagearray = ViewData["ImageArray"] as string[];
+
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome To MOVIE REVIEW APP!</h1>
 </div>
+
+<style>
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin: 20px;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+        background-color: #f0f0f0;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .card-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+</style>
+<div class="row">
+    @{
+        int i =0;
+        }
+@foreach (var movie in movies)
+{
+        <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>@movie.Title</h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="@Url.Content($"~/lib/{imagearray[i]}.jpg")" alt="Card Image" class="card-image" />
+
+                        <!--    <img src="C:\\Users\\dasak\\source\\repos\\MovieReviewApp\\MovieReviewApp\\wwwroot\\lib\\Pokiri_movie_poster.jpg" alt="Card Image" class="card-image" />
+                                      -->
+                        <p>@movie.Director</p>
+                    </div>
+                </div>
+            </div>
+      
+        i++;
+}
+
+</div>
+
