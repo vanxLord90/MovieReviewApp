@@ -20,10 +20,35 @@ namespace MovieReviewApp.Controllers
         }
 
         // GET: Reviews
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string title)
         {
-            return View(await _context.Review.ToListAsync());
+            var reviews = GetReviewsByTitle(title);
+            ViewData["ReviewsByTitle"] = reviews;
+            string[]reviewers = { "barbara", "john", "shrek", "varun"};
+            ViewData["Reviewers"] = reviewers;
+            var movies = _context.Movie.Where(r => r.Title == title).ToList();
+
+
+            // You can now pass these lists to your view or use them as needed
+
+            ViewData["Movies"] = movies;
+
+            return View();
+            //return View(await _context.Review.ToListAsync());
         }
+
+        private List<Review> GetReviewsByTitle(string title)
+        {
+            // Replace this with your actual logic to fetch reviews based on the movie title
+            // For demonstration purposes, using dummy reviews
+            var reviews = _context.Review.Where(r => r.Title == title).ToList();
+            return reviews;
+        }
+        
+        //public IActionResult DisplayReviewList(string title)
+        //{
+            
+        //}
 
         // GET: Reviews/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -46,8 +71,6 @@ namespace MovieReviewApp.Controllers
         // GET: Reviews/Create
         public IActionResult Create()
         {
-            
-
                 return View();
         }
 
@@ -59,17 +82,16 @@ namespace MovieReviewApp.Controllers
         
         [ValidateAntiForgeryToken]
         // POST: Reviews/Create
-       
-       
-
-        
+         
         public async Task<IActionResult> Create([Bind("Id,MovieId,Reviewer,ReviewDate,Rating,MovieReview,Title")] Review review)
         {
+            string title = review.Title;
             if (ModelState.IsValid)
             {
                 _context.Add(review);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", new { title });
+
             }
             return View(review);
         }

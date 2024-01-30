@@ -28,7 +28,7 @@ namespace MovieReviewApp.Controllers
 
             ViewData["Movies"] = movies;
             ViewData["Reviews"] = reviews;
-            string[] Imagearray = {"sorcerer'sstone", "superbad", "Pokiri_movie_poster", "oppenheimer"  };
+            string[] Imagearray = {"Sorcerer's Stone", "Superbad", "Pokiri", "Oppenheimer"  };
             ViewData["ImageArray"] = Imagearray;
             return View();
         }

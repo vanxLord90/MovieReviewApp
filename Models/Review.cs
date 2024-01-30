@@ -10,6 +10,7 @@
         public double Rating { get; set; }
 
         public string MovieReview { get; set; }
+
         public Review()
         {
             
